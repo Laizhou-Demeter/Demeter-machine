@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Demeter | SMC/BMC Lines · Hydraulic Presses · Molds</title>
+    <meta name="description" content="Explore Demeter's full range of industrial compression molding equipment: SMC/BMC sheet production lines, four-column hydraulic presses (10T–2000T), and high-precision compression molds.">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* ========== CSS Variables ========== */
+        :root {
+            --primary-dark: #0B2B4A;
+            --primary: #1B4F7A;
+            --primary-light: #2E7DBF;
+            --accent: #1A8C4A;
+            --accent-light: #28B463;
+            --gray-dark: #2C3E50;
+            --gray: #5D6D7E;
+            --gray-light: #AAB7C4;
+            --bg-light: #F4F7FA;
+            --white: #FFFFFF;
+            --text-dark: #1C2833;
+            --shadow: 0 2px 20px rgba(0,0,0,0.08);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* ========== Global ========== */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            padding-top: 76px;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+        a { text-decoration: none; transition: var(--transition); }
+
+        .section-padding { padding: 80px 0; }
+        @media (max-width: 768px) { .section-padding { padding: 50px 0; } }
+
+        /* ========== Navbar ========== */
+        .navbar {
+            background: var(--primary-dark);
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            z-index: 1030;
+        }
+        .navbar .container { padding: 0 15px; }
+        .navbar-brand { display: flex; align-items: center; gap: 10px; padding: 10px 0; }
+        .navbar-brand img { height: 42px; width: auto; }
+        .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+        .brand-text .en { color: var(--white); font-size: 0.72rem; font-weight: 700; white-space: nowrap; }
+        .brand-text .tagline { color: var(--accent-light); font-size: 0.65rem; white-space: nowrap; }
+        .navbar-nav .nav-link {
+            color: rgba(255,255,255,0.85) !important;
+            font-size: 0.9rem;
+            padding: 28px 16px !important;
+            position: relative;
+            white-space: nowrap;
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active { color: var(--accent-light) !important; }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 0; height: 3px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after { width: 100%; }
+        .navbar-toggler { border: 1px solid rgba(255,255,255,0.3); padding: 6px 10px; }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        @media (max-width: 991.98px) {
+            .navbar-nav .nav-link { padding: 12px 20px !important; }
+            .navbar-nav .nav-link::after { display: none; }
+            .navbar-collapse { background: var(--primary-dark); padding-bottom: 15px; }
+        }
+
+        /* ========== Page Banner ========== */
+        .page-banner {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: var(--white);
+        }
+        .page-banner h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 10px; }
+        .page-banner .breadcrumb { justify-content: center; margin: 0; background: transparent; }
+        .page-banner .breadcrumb a { color: var(--accent-light); }
+        .page-banner .breadcrumb .active { color: rgba(255,255,255,0.6); }
+        @media (max-width: 768px) {
+            .page-banner { padding: 40px 0; }
+            .page-banner h1 { font-size: 1.8rem; }
+        }
+
+        /* ========== Product Section ========== */
+        .product-section { background: var(--bg-light); }
+        .product-section:nth-child(even) { background: var(--white); }
+
+        .product-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .product-header h2 {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            position: relative;
+            display: inline-block;
+        }
+        .product-header h2::after {
+            content: '';
+            display: block;
+            width: 60px; height: 3px;
+            background: var(--accent);
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+        .product-header .subtitle {
+            color: var(--gray);
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Gallery thumbnails */
+        .gallery-thumb {
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .gallery-thumb:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+        .gallery-thumb img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-thumb .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+        .gallery-thumb:hover .overlay { opacity: 1; }
+        @media (max-width: 768px) {
+            .gallery-thumb img { height: 150px; }
+        }
+
+        /* Features list */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed var(--gray-light);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: var(--gray-dark);
+        }
+        .feature-list li:last-child { border-bottom: none; }
+        .feature-list li i {
+            color: var(--accent);
+            font-size: 1rem;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        /* Specs table */
+        .specs-table { font-size: 0.9rem; }
+        .specs-table th {
+            background: var(--primary-dark);
+            color: var(--white);
+            font-weight: 600;
+            white-space: nowrap;
+            width: 40%;
+        }
+        .specs-table td { color: var(--gray-dark); }
+        .specs-table tr:hover td { background: rgba(26,140,74,0.05); }
+
+        /* Action button */
+        .btn-quote {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--white);
+            font-weight: 600;
+            padding: 12px 32px;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .btn-quote:hover {
+            background: var(--accent-light);
+            border-color: var(--accent-light);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26,140,74,0.4);
+        }
+
+        /* Divider */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gray-light), transparent);
+            margin: 0;
+        }
+
+        /* ========== Modal Lightbox ========== */
+        .modal-lightbox .modal-dialog { max-width: 85vw; }
+        .modal-lightbox .modal-content { background: transparent; border: none; }
+        .modal-lightbox .modal-body { padding: 0; text-align: center; }
+        .modal-lightbox .modal-body img { max-width: 100%; max-height: 85vh; border-radius: 4px; }
+        .modal-lightbox .btn-close-white { filter: invert(1); opacity: 0.8; position: absolute; top: 10px; right: 10px; z-index: 1; }
+
+        /* ========== Footer ========== */
+        footer {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+        .footer-top {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-top h5 {
+            color: var(--white);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .footer-top h5::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 40px; height: 2px;
+            background: var(--accent);
+        }
+        .footer-top ul { list-style: none; padding: 0; margin: 0; }
+        .footer-top ul li { margin-bottom: 10px; }
+        .footer-top ul li a { color: rgba(255,255,255,0.6); transition: var(--transition); }
+        .footer-top ul li a:hover { color: var(--accent-light); padding-left: 5px; }
+        .footer-contact p { margin-bottom: 8px; }
+        .footer-contact i { width: 20px; color: var(--accent-light); margin-right: 8px; }
+        .footer-bottom {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px; height: 36px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            color: rgba(255,255,255,0.6);
+            margin-left: 10px;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+        .social-icons a:hover { background: var(--accent); border-color: var(--accent); color: var(--white); }
+
+        /* ========== Back to Top ========== */
+        .back-to-top {
+            position: fixed; bottom: 30px; right: 30px;
+            width: 44px; height: 44px;
+            background: var(--accent);
+            color: var(--white);
+            border: none; border-radius: 50%;
+            display: flex;
+            align-items: center; justify-content: center;
+            font-size: 1.2rem; cursor: pointer;
+            opacity: 0; visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            box-shadow: 0 4px 15px rgba(26,140,74,0.4);
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: var(--accent-light); transform: translateY(-3px); }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== Navbar ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://sc02.alicdn.com/kf/H3cf490643f124dc8be6fd181cb7cc029P.jpg" alt="Demeter Logo">
+                <span class="brand-text">
+                    <span class="en">LAIZHOU DEMETER IMPORTS AND EXPORTS CO., LTD</span>
+                    <span class="tagline">SMC/BMC Production Line · Hydraulic Press · Mold</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== Page Banner ==================== -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Products</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!--  Product 1: SMC/BMC Sheet Molding Compound Production Line          -->
+    <!-- ================================================================== -->
+    <section class="product-section section-padding">
+        <div class="container">
+            <div class="product-header">
+                <h2>SMC / BMC Sheet Molding Compound Production Line</h2>
+                <p class="subtitle">Complete turnkey solution — from raw material mixing to finished sheet winding</p>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="row g-3 mb-5">
+                <div class="col-md-4 col-6">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H1020b0e644ff4bd289abf738403392a6y.jpg" data-caption="SMC Sheet Molding Compound Production Line — Full System Overview">
+                        <img src="https://sc02.alicdn.com/kf/H1020b0e644ff4bd289abf738403392a6y.jpg" alt="SMC Production Line Full View">
+                        <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H82b0e48576d94ee28cd012b105c5f132A.jpg" data-caption="SMC Sheet Machine — Resin Paste &amp; Fiber Impregnation Section">
+                        <img src="https://sc02.alicdn.com/kf/H82b0e48576d94ee28cd012b105c5f132A.jpg" alt="SMC Sheet Machine Close-up">
+                        <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H07883ecc761549b69243727c6c5f54fah.jpg" data-caption="SMC Production Line &amp; Application Products — Full Range Overview">
+                        <img src="https://sc02.alicdn.com/kf/H07883ecc761549b69243727c6c5f54fah.jpg" alt="SMC Production Line and Products">
+                        <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features + Specs (two columns) -->
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h4 style="color:var(--primary-dark);margin-bottom:20px;"><i class="fa-solid fa-star" style="color:var(--accent);margin-right:8px;"></i>Core Features</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Precision Resin Paste System</strong> — Servo-driven metering pumps ensure accurate resin-to-filler ratio control within ±0.5%.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>PID Temperature Control</strong> — Multi-zone independent heating with real-time PID regulation on doctor boxes and compaction rollers.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Online Thickness Gauging</strong> — Laser/laser-ultrasonic sensors continuously monitor sheet thickness with automatic feedback adjustment.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Low-Shrinkage Formulation Support</strong> — Optimized impregnation and compaction zones accommodate LS/LP SMC recipes for Class-A surface parts.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Fully Automated Operation</strong> — PLC + HMI touchscreen control with recipe storage, production data logging, and remote diagnostics.</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h4 style="color:var(--primary-dark);margin-bottom:20px;"><i class="fa-solid fa-table" style="color:var(--accent);margin-right:8px;"></i>Technical Specifications</h4>
+                    <table class="table table-bordered specs-table">
+                        <tbody>
+                            <tr><th>Model</th><td>DMT-SMC1200B</td></tr>
+                            <tr><th>Product Width</th><td>1000 – 1200 mm</td></tr>
+                            <tr><th>Production Speed</th><td>2 – 8 m/min (variable)</td></tr>
+                            <tr><th>Sheet Density Range</th><td>1.0 – 2.0 g/cm³</td></tr>
+                            <tr><th>Installed Power</th><td>Approx. 45 kW</td></tr>
+                            <tr><th>Overall Line Length</th><td>~25 m (customizable layout)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="contact.html" class="btn btn-quote">Get a Quote &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ================================================================== -->
+    <!--  Product 2: Four-Column Hydraulic Press                             -->
+    <!-- ================================================================== -->
+    <section class="product-section section-padding">
+        <div class="container">
+            <div class="product-header">
+                <h2>Four-Column Hydraulic Press</h2>
+                <p class="subtitle">Rigid frame structure — precision pressing from 10T to 2000T</p>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="row g-3 mb-5">
+                <div class="col-md-4 col-6">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H57d906d8c92945aeb013c0eb8ad417b2G.jpg" data-caption="Four-Column Hydraulic Press — Y32 Series Overview">
+                        <img src="https://sc02.alicdn.com/kf/H57d906d8c92945aeb013c0eb8ad417b2G.jpg" alt="Hydraulic Press Overview">
+                        <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H5941392f65eb46a499978b48239b9f0bp.jpg" data-caption="Hydraulic Press with SMC Mold — Working Area Close-up">
+                        <img src="https://sc02.alicdn.com/kf/H5941392f65eb46a499978b48239b9f0bp.jpg" alt="Press Working Area">
+                        <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/Haa287213b7f641fc8225e9e63dd33a01I.jpg" data-caption="Y32 Series Technical Specification Sheet">
+                        <img src="https://sc02.alicdn.com/kf/Haa287213b7f641fc8225e9e63dd33a01I.jpg" alt="Y32 Spec Sheet">
+                        <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features + Specs -->
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h4 style="color:var(--primary-dark);margin-bottom:20px;"><i class="fa-solid fa-star" style="color:var(--accent);margin-right:8px;"></i>Core Features</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Stress-Relieved Welded Frame</strong> — Entire frame undergoes annealing after welding to eliminate residual stress, ensuring long-term dimensional stability.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Cartridge Valve Integrated Hydraulic System</strong> — Compact manifold design reduces leakage points and improves response speed.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>PLC + Touchscreen Control</strong> — Intuitive HMI with multi-stage pressure/position profiles, fault diagnostics, and production counters.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Four-Corner Leveling</strong> — Independent cylinder control with position feedback ensures parallel platen movement for even pressure distribution.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Safety Light Curtain + Dual-Hand Start</strong> — Full compliance with CE and ISO safety standards for operator protection.</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h4 style="color:var(--primary-dark);margin-bottom:20px;"><i class="fa-solid fa-table" style="color:var(--accent);margin-right:8px;"></i>Technical Specifications (Y32-315T)</h4>
+                    <table class="table table-bordered specs-table">
+                        <tbody>
+                            <tr><th>Nominal Force</th><td>3150 KN (315 Tons)</td></tr>
+                            <tr><th>System Pressure</th><td>25 MPa</td></tr>
+                            <tr><th>Effective Travel</th><td>800 mm</td></tr>
+                            <tr><th>Max Opening Height</th><td>1200 mm</td></tr>
+                            <tr><th>Table Size (L×W)</th><td>1300 × 1200 mm</td></tr>
+                            <tr><th>Motor Power</th><td>15 kW</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="mt-2" style="font-size:0.85rem;color:var(--gray);">
+                        <i class="fa-solid fa-info-circle" style="color:var(--accent);"></i>
+                        Available in capacities from <strong>10T to 2000T</strong>. Contact us for full model specifications.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="contact.html" class="btn btn-quote">Request Technical Consultation &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ================================================================== -->
+    <!--  Product 3: Manhole Cover Compression Molds                          -->
+    <!-- ================================================================== -->
+    <section class="product-section section-padding">
+        <div class="container">
+            <div class="product-header">
+                <h2>SMC / BMC Manhole Cover Compression Molds</h2>
+                <p class="subtitle">Circular &amp; rectangular manhole cover molds — precision tooling for municipal, residential &amp; heavy-duty applications</p>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="row g-3 mb-5">
+                <div class="col-md-4 col-6">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/Hb564f0f60b8f42ae9ecb7ed0b897c6d9M.jpg" data-caption="SMC Compression Mold Die Set — Precision Machined Tool Steel">
+                        <img src="https://sc02.alicdn.com/kf/Hb564f0f60b8f42ae9ecb7ed0b897c6d9M.jpg" alt="Compression Mold Die Set">
+                        <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H578d0ae0385b4dd9b84080576347c48fE.jpg" data-caption="SMC Molded GRP Sectional Water Tank — Finished Product Example (SMC Mold Application)">
+                        <img src="https://sc02.alicdn.com/kf/H578d0ae0385b4dd9b84080576347c48fE.jpg" alt="SMC GRP Water Tank">
+                        <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H3303644d2dce407eacb82153644d7a2aF.jpg" data-caption="SMC Molded Septic Tank — Finished SMC Product Example">
+                        <img src="https://sc02.alicdn.com/kf/H3303644d2dce407eacb82153644d7a2aF.jpg" alt="SMC Molded Septic Tank Product">
+                        <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features + Specs -->
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h4 style="color:var(--primary-dark);margin-bottom:20px;"><i class="fa-solid fa-star" style="color:var(--accent);margin-right:8px;"></i>Core Features</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Premium Mold Steel</strong> — P20 / 718 pre-hardened tool steel (HRC 28–32) for long service life under high-cycle production.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Hard Chrome Plated Cavities</strong> — Electrolytic chrome surface treatment ensures superior mold release and corrosion resistance for outdoor-grade products.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Circular &amp; Rectangular Designs</strong> — Full range from lightweight pedestrian covers (C250) to heavy-duty road covers (D400), including custom non-standard sizes.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Precision CNC Machining</strong> — Tight tolerance control ensures consistent part dimensions batch after batch, critical for load-rated manhole covers.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span><strong>Custom Heating &amp; Ejection</strong> — Electric cartridge or oil heating with independent zone control; tailored ejector systems for complex geometries.</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h4 style="color:var(--primary-dark);margin-bottom:20px;"><i class="fa-solid fa-table" style="color:var(--accent);margin-right:8px;"></i>Technical Specifications (Selected Models)</h4>
+                    <table class="table table-bordered specs-table">
+                        <tbody>
+                            <tr><th>Mold Material</th><td>P20 / 718 Pre-Hardened Steel</td></tr>
+                            <tr><th>Hardness</th><td>HRC 28 – 32</td></tr>
+                            <tr><th>Circular Model (Popular)</th><td>φ700 × 60 mm — C250 Lightweight</td></tr>
+                            <tr><th>Circular Model (Heavy)</th><td>φ700 × 110 mm — D400 Heavy Duty</td></tr>
+                            <tr><th>Rectangular Model</th><td>825 × 825 × 76 mm — C250 Lightweight</td></tr>
+                            <tr><th>Custom Range</th><td>φ300 – φ900 (circular) · up to 1750×950 (rectangular)</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="mt-2" style="font-size:0.85rem;color:var(--gray);">
+                        <i class="fa-solid fa-info-circle" style="color:var(--accent);"></i>
+                        Full custom mold design supported. Contact us with your load requirements and dimensions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="contact.html" class="btn btn-quote">Get a Quote &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Footer ==================== -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <h5>Demeter</h5>
+                        <p style="font-size:0.85rem;margin-bottom:15px;">
+                            Specializing in SMC/BMC sheet molding compound production lines, four-column hydraulic presses, and high-precision molds — delivering reliable compression molding solutions worldwide.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#" title="WeChat"><i class="fa-brands fa-weixin"></i></a>
+                            <a href="#" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#" title="Phone"><i class="fa-solid fa-phone"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="about.html">&gt; About Us</a></li>
+                            <li><a href="products.html">&gt; Products</a></li>
+                            <li><a href="service.html">&gt; Services</a></li>
+                            <li><a href="certificates.html">&gt; Certificates</a></li>
+                            <li><a href="news.html">&gt; News</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5>Products</h5>
+                        <ul>
+                            <li><a href="products.html">&gt; SMC / BMC Sheet Lines</a></li>
+                            <li><a href="products.html">&gt; Four-Column Hydraulic Presses</a></li>
+                            <li><a href="products.html">&gt; Compression Molds</a></li>
+                            <li><a href="products.html">&gt; Auxiliary Equipment</a></li>
+                            <li><a href="products.html">&gt; Custom Solutions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5>Contact Us</h5>
+                        <div class="footer-contact">
+                            <p><i class="fa-solid fa-phone"></i> +86-13780678172</p>
+                            <p><i class="fa-solid fa-envelope"></i> infiniteindustry@outlook.com</p>
+                            <p><i class="fa-solid fa-fax"></i> +86-13780678172</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Laizhou, Shandong, China</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+                <p style="margin:0;">&copy; 2026 Demeter. All rights reserved.</p>
+                <p style="margin:0;font-size:0.8rem;">ICP License: ZJ-ICP-XXXXXXXX</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== Lightbox Modal ==================== -->
+    <div class="modal fade modal-lightbox" id="lightboxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0" style="position:absolute;top:0;right:0;z-index:1;">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="" id="lightboxImage">
+                    <p id="lightboxCaption" style="color:rgba(255,255,255,0.8);font-size:0.85rem;margin-top:10px;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== Back to Top ==================== -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        /* ---- Lightbox: update modal image on thumbnail click ---- */
+        (function () {
+            var thumbs = document.querySelectorAll('.gallery-thumb');
+            var modalImg = document.getElementById('lightboxImage');
+            var modalCaption = document.getElementById('lightboxCaption');
+
+            thumbs.forEach(function (thumb) {
+                thumb.addEventListener('click', function () {
+                    var imgSrc = this.getAttribute('data-img');
+                    var caption = this.getAttribute('data-caption');
+                    modalImg.src = imgSrc;
+                    modalImg.alt = caption;
+                    modalCaption.textContent = caption;
+                });
+            });
+        })();
+
+        /* ---- Back to Top ---- */
+        (function () {
+            var btn = document.getElementById('backToTop');
+            window.addEventListener('scroll', function () {
+                btn.classList.toggle('show', window.scrollY > 400);
+            });
+            btn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+
+        /* ---- Auto-collapse mobile nav ---- */
+        (function () {
+            var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            var menuCollapse = document.getElementById('mainNav');
+            var bsCollapse = bootstrap.Collapse.getInstance(menuCollapse);
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    if (menuCollapse.classList.contains('show')) {
+                        if (!bsCollapse) bsCollapse = new bootstrap.Collapse(menuCollapse, { toggle: false });
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        })();
+
+        /* ---- Navbar scroll shadow ---- */
+        (function () {
+            var navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', function () {
+                navbar.style.boxShadow = window.scrollY > 10
+                    ? '0 4px 20px rgba(0,0,0,0.25)'
+                    : '0 2px 10px rgba(0,0,0,0.15)';
+            });
+        })();
+    </script>
+
+</body>
+</html>

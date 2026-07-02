@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Demeter | Full Lifecycle Support for Compression Molding Equipment</title>
+    <meta name="description" content="Demeter provides comprehensive service support: line planning, installation & commissioning, technical training, mold tryout, maintenance, and equipment upgrades.">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* ========== CSS Variables ========== */
+        :root {
+            --primary-dark: #0B2B4A;
+            --primary: #1B4F7A;
+            --primary-light: #2E7DBF;
+            --accent: #1A8C4A;
+            --accent-light: #28B463;
+            --gray-dark: #2C3E50;
+            --gray: #5D6D7E;
+            --gray-light: #AAB7C4;
+            --bg-light: #F4F7FA;
+            --white: #FFFFFF;
+            --text-dark: #1C2833;
+            --shadow: 0 2px 20px rgba(0,0,0,0.08);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* ========== Global ========== */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            padding-top: 76px;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+        a { text-decoration: none; transition: var(--transition); }
+
+        .section-padding { padding: 80px 0; }
+        @media (max-width: 768px) { .section-padding { padding: 50px 0; } }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            position: relative;
+            display: inline-block;
+        }
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 60px; height: 3px;
+            background: var(--accent);
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+        .section-title p {
+            color: var(--gray);
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        /* ========== Navbar ========== */
+        .navbar {
+            background: var(--primary-dark);
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            z-index: 1030;
+        }
+        .navbar .container { padding: 0 15px; }
+        .navbar-brand { display: flex; align-items: center; gap: 10px; padding: 10px 0; }
+        .navbar-brand img { height: 42px; width: auto; }
+        .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+        .brand-text .en { color: var(--white); font-size: 0.72rem; font-weight: 700; white-space: nowrap; }
+        .brand-text .tagline { color: var(--accent-light); font-size: 0.65rem; white-space: nowrap; }
+        .navbar-nav .nav-link {
+            color: rgba(255,255,255,0.85) !important;
+            font-size: 0.9rem;
+            padding: 28px 16px !important;
+            position: relative;
+            white-space: nowrap;
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active { color: var(--accent-light) !important; }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 0; height: 3px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after { width: 100%; }
+        .navbar-toggler { border: 1px solid rgba(255,255,255,0.3); padding: 6px 10px; }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        @media (max-width: 991.98px) {
+            .navbar-nav .nav-link { padding: 12px 20px !important; }
+            .navbar-nav .nav-link::after { display: none; }
+            .navbar-collapse { background: var(--primary-dark); padding-bottom: 15px; }
+        }
+
+        /* ========== Page Banner ========== */
+        .page-banner {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: var(--white);
+        }
+        .page-banner h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 10px; }
+        .page-banner .breadcrumb { justify-content: center; margin: 0; background: transparent; }
+        .page-banner .breadcrumb a { color: var(--accent-light); }
+        .page-banner .breadcrumb .active { color: rgba(255,255,255,0.6); }
+        @media (max-width: 768px) {
+            .page-banner { padding: 40px 0; }
+            .page-banner h1 { font-size: 1.8rem; }
+        }
+
+        /* ========== Service Banner ========== */
+        .service-banner {
+            background: linear-gradient(135deg, #0B2B4A 0%, #1B4F7A 60%, #2E7DBF 100%);
+            padding: 70px 0;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        .service-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        .service-banner .container { position: relative; z-index: 1; }
+        .service-banner h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 15px; }
+        .service-banner p { font-size: 1.1rem; opacity: 0.85; max-width: 650px; margin: 0 auto; }
+        @media (max-width: 768px) {
+            .service-banner { padding: 50px 0; }
+            .service-banner h2 { font-size: 1.5rem; }
+            .service-banner p { font-size: 0.95rem; }
+        }
+
+        /* ========== Service Cards ========== */
+        .service-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 35px 25px;
+            height: 100%;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 3px solid transparent;
+            text-align: center;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-top-color: var(--accent);
+        }
+        .service-card .icon-circle {
+            width: 70px; height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--bg-light) 0%, #E8EDF2 100%);
+            display: flex;
+            align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+        .service-card:hover .icon-circle {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .service-card h4 { font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 12px; }
+        .service-card p { font-size: 0.9rem; color: var(--gray); margin: 0; line-height: 1.7; }
+
+        /* ========== Service Process (Stepper) ========== */
+        .stepper {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            flex-wrap: wrap;
+        }
+        .stepper::before {
+            content: '';
+            position: absolute;
+            top: 35px; left: 60px; right: 60px;
+            height: 2px;
+            background: var(--gray-light);
+            z-index: 0;
+        }
+        .step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            min-width: 120px;
+            padding: 0 10px;
+        }
+        .step-circle {
+            width: 70px; height: 70px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 3px solid var(--gray-light);
+            display: flex;
+            align-items: center; justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--gray);
+            transition: var(--transition);
+            position: relative;
+        }
+        .step:hover .step-circle {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: var(--white);
+            transform: scale(1.08);
+        }
+        .step h5 { font-size: 1rem; color: var(--primary-dark); margin-bottom: 6px; }
+        .step p { font-size: 0.82rem; color: var(--gray); margin: 0; }
+        .step-arrow {
+            position: absolute;
+            top: 56px;
+            right: -8px;
+            color: var(--gray-light);
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .stepper { flex-direction: column; gap: 0; }
+            .stepper::before {
+                top: 35px; left: 35px; right: auto;
+                width: 2px; height: calc(100% - 70px);
+            }
+            .step {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+                text-align: left;
+                padding: 15px 0;
+                min-width: auto;
+            }
+            .step-circle { margin: 0; width: 55px; height: 55px; font-size: 1.3rem; flex-shrink: 0; }
+            .step-arrow { display: none; }
+            .step-body { flex: 1; }
+        }
+
+        /* ========== Parts & Support ========== */
+        .parts-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            height: 100%;
+        }
+        .parts-card h4 {
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        .parts-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .parts-list li {
+            padding: 12px 15px;
+            border-bottom: 1px dashed var(--gray-light);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: var(--gray-dark);
+            transition: var(--transition);
+        }
+        .parts-list li:last-child { border-bottom: none; }
+        .parts-list li:hover { background: rgba(26,140,74,0.04); padding-left: 20px; }
+        .parts-list li i { color: var(--accent); font-size: 0.5rem; }
+
+        /* Support / Contact Form */
+        .support-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            height: 100%;
+        }
+        .support-card h4 {
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+        }
+        .support-hotline {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .support-hotline i { font-size: 1.3rem; }
+        .support-card .form-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--gray-dark);
+        }
+        .support-card .form-control {
+            border: 1px solid var(--gray-light);
+            border-radius: 4px;
+            padding: 10px 12px;
+            font-size: 0.9rem;
+        }
+        .support-card .form-control:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 0.2rem rgba(26,140,74,0.15);
+        }
+        .btn-submit {
+            background: var(--accent);
+            color: var(--white);
+            font-weight: 600;
+            padding: 10px 28px;
+            border: none;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        .btn-submit:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26,140,74,0.4);
+        }
+
+        /* ========== Footer ========== */
+        footer {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+        .footer-top {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-top h5 {
+            color: var(--white);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .footer-top h5::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 40px; height: 2px;
+            background: var(--accent);
+        }
+        .footer-top ul { list-style: none; padding: 0; margin: 0; }
+        .footer-top ul li { margin-bottom: 10px; }
+        .footer-top ul li a { color: rgba(255,255,255,0.6); transition: var(--transition); }
+        .footer-top ul li a:hover { color: var(--accent-light); padding-left: 5px; }
+        .footer-contact p { margin-bottom: 8px; }
+        .footer-contact i { width: 20px; color: var(--accent-light); margin-right: 8px; }
+        .footer-bottom {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center; justify-content: center;
+            width: 36px; height: 36px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            color: rgba(255,255,255,0.6);
+            margin-left: 10px;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+        .social-icons a:hover { background: var(--accent); border-color: var(--accent); color: var(--white); }
+
+        /* ========== Back to Top ========== */
+        .back-to-top {
+            position: fixed; bottom: 30px; right: 30px;
+            width: 44px; height: 44px;
+            background: var(--accent);
+            color: var(--white);
+            border: none; border-radius: 50%;
+            display: flex;
+            align-items: center; justify-content: center;
+            font-size: 1.2rem; cursor: pointer;
+            opacity: 0; visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            box-shadow: 0 4px 15px rgba(26,140,74,0.4);
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: var(--accent-light); transform: translateY(-3px); }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== Navbar ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://sc02.alicdn.com/kf/H3cf490643f124dc8be6fd181cb7cc029P.jpg" alt="Demeter Logo">
+                <span class="brand-text">
+                    <span class="en">LAIZHOU DEMETER IMPORTS AND EXPORTS CO., LTD</span>
+                    <span class="tagline">SMC/BMC Production Line · Hydraulic Press · Mold</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== Page Banner ==================== -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Service &amp; Support</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ==================== Service Philosophy Banner ==================== -->
+    <section class="service-banner">
+        <div class="container">
+            <h2>Full Lifecycle Service, Creating Greater Value for Customers</h2>
+            <p>From equipment selection to process optimization, Demeter stands by your side — every step of the way.</p>
+        </div>
+    </section>
+
+    <!-- ==================== Service Modules ==================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Six comprehensive service modules covering the entire equipment lifecycle</p>
+            </div>
+
+            <!-- 三列网格：6大服务模块 -->
+            <div class="row g-4">
+                <!-- 整线规划咨询 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-circle"><i class="bi bi-pencil-square"></i></div>
+                        <h4>Line Planning &amp; Consulting</h4>
+                        <p>Custom SMC/BMC production line layout design, equipment selection, and turnkey project planning tailored to your output requirements and factory conditions.</p>
+                    </div>
+                </div>
+
+                <!-- 安装调试 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-circle"><i class="bi bi-tools"></i></div>
+                        <h4>Installation &amp; Commissioning</h4>
+                        <p>Professional engineering team handles on-site installation, mechanical alignment, electrical wiring, and full system commissioning for rapid production startup.</p>
+                    </div>
+                </div>
+
+                <!-- 技术培训 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-circle"><i class="bi bi-people-fill"></i></div>
+                        <h4>Technical Training</h4>
+                        <p>Systematic training programs for operators and maintenance personnel, covering machine operation, safety protocols, troubleshooting, and preventive maintenance.</p>
+                    </div>
+                </div>
+
+                <!-- 模具试模支持 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-circle"><i class="bi bi-box-seam"></i></div>
+                        <h4>Mold Tryout Support</h4>
+                        <p>On-site mold trial runs with process parameter debugging — temperature, pressure, and cycle time optimization to ensure perfect mold-to-press compatibility.</p>
+                    </div>
+                </div>
+
+                <!-- 维修保养 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-circle"><i class="bi bi-wrench"></i></div>
+                        <h4>Maintenance &amp; Repair</h4>
+                        <p>Responsive after-sales repair service, scheduled preventive inspections, and genuine OEM spare parts supply to maximize equipment uptime.</p>
+                    </div>
+                </div>
+
+                <!-- 设备升级改造 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-circle"><i class="bi bi-arrow-repeat"></i></div>
+                        <h4>Upgrades &amp; Retrofits</h4>
+                        <p>Automation upgrades for hydraulic presses and SMC lines, energy-saving retrofits, and control system modernization to enhance productivity and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Service Process ==================== -->
+    <section class="section-padding" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Service Process</h2>
+                <p>Streamlined 5-step workflow ensures every project is delivered on time and to specification</p>
+            </div>
+
+            <!-- 步骤条 -->
+            <div class="stepper">
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-circle">1</div>
+                    <div class="step-body">
+                        <h5>Requirement Analysis</h5>
+                        <p>We listen to your production goals, assess your facility, and define technical specifications together.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-circle">2</div>
+                    <div class="step-body">
+                        <h5>Solution Design</h5>
+                        <p>Our engineering team develops a tailored proposal with layout drawings, equipment specs, and project timeline.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-circle">3</div>
+                    <div class="step-body">
+                        <h5>Contract &amp; Execution</h5>
+                        <p>After agreement, we move into manufacturing, quality inspection, and prepare for shipment and installation.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step">
+                    <div class="step-circle">4</div>
+                    <div class="step-body">
+                        <h5>Delivery &amp; Acceptance</h5>
+                        <p>On-site installation, commissioning, and trial production — signed off only when all KPIs are met.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step">
+                    <div class="step-circle">5</div>
+                    <div class="step-body">
+                        <h5>Ongoing Support</h5>
+                        <p>24/7 technical hotline, periodic follow-ups, spare parts supply, and continuous improvement recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Parts & Technical Support ==================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- 左侧：常备配件清单 -->
+                <div class="col-lg-6">
+                    <div class="parts-card">
+                        <h4><i class="bi bi-box-seam" style="margin-right:8px;"></i>Stocked Spare Parts</h4>
+                        <p style="font-size:0.85rem;color:var(--gray);margin-bottom:20px;">We maintain a comprehensive inventory of critical wear parts and consumables for rapid dispatch.</p>
+                        <ul class="parts-list">
+                            <li><i class="bi bi-circle-fill"></i> Hydraulic Seal Kits</li>
+                            <li><i class="bi bi-circle-fill"></i> Filter Element Assemblies</li>
+                            <li><i class="bi bi-circle-fill"></i> Heating Elements</li>
+                            <li><i class="bi bi-circle-fill"></i> PLC Controller Modules</li>
+                            <li><i class="bi bi-circle-fill"></i> Displacement Sensors</li>
+                            <li><i class="bi bi-circle-fill"></i> Hydraulic Valve Blocks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 右侧：技术支持 + 留言表单 -->
+                <div class="col-lg-6">
+                    <div class="support-card">
+                        <h4><i class="bi bi-headset" style="margin-right:8px;color:var(--accent);"></i>24-Hour Technical Hotline</h4>
+                        <div class="support-hotline">
+                            <i class="bi bi-telephone-fill"></i> +86-13780678172
+                        </div>
+                        <p style="font-size:0.85rem;color:var(--gray);margin-bottom:20px;">Leave us a message and our support team will respond within one business day.</p>
+
+                        <!-- 留言表单 -->
+                        <form id="supportForm" action="https://formspree.io/f/mqevyrvw" method="POST">
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Name <span style="color:#dc3545;">*</span></label>
+                                <input type="text" class="form-control" id="contactName" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactInfo" class="form-label">Contact <span style="color:#dc3545;">*</span></label>
+                                <input type="text" class="form-control" id="contactInfo" name="contact" placeholder="Phone / Email / WhatsApp" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Message <span style="color:#dc3545;">*</span></label>
+                                <textarea class="form-control" id="contactMessage" name="message" rows="3" placeholder="Describe your equipment, issue, or inquiry..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit" id="submitBtn">
+                                <i class="bi bi-send-fill" style="margin-right:6px;"></i> Submit Inquiry
+                            </button>
+                            <p id="formFeedback" style="margin-top:12px;font-size:0.85rem;display:none;"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Footer ==================== -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <h5>Demeter</h5>
+                        <p style="font-size:0.85rem;margin-bottom:15px;">
+                            Specializing in SMC/BMC sheet molding compound production lines, four-column hydraulic presses, and high-precision molds — delivering reliable compression molding solutions worldwide.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#" title="WeChat"><i class="fa-brands fa-weixin"></i></a>
+                            <a href="#" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#" title="Phone"><i class="fa-solid fa-phone"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="about.html">&gt; About Us</a></li>
+                            <li><a href="products.html">&gt; Products</a></li>
+                            <li><a href="service.html">&gt; Services</a></li>
+                            <li><a href="certificates.html">&gt; Certificates</a></li>
+                            <li><a href="news.html">&gt; News</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5>Products</h5>
+                        <ul>
+                            <li><a href="products.html">&gt; SMC / BMC Sheet Lines</a></li>
+                            <li><a href="products.html">&gt; Four-Column Hydraulic Presses</a></li>
+                            <li><a href="products.html">&gt; Compression Molds</a></li>
+                            <li><a href="products.html">&gt; Auxiliary Equipment</a></li>
+                            <li><a href="products.html">&gt; Custom Solutions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5>Contact Us</h5>
+                        <div class="footer-contact">
+                            <p><i class="fa-solid fa-phone"></i> +86-13780678172</p>
+                            <p><i class="fa-solid fa-envelope"></i> infiniteindustry@outlook.com</p>
+                            <p><i class="fa-solid fa-fax"></i> +86-13780678172</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Laizhou, Shandong, China</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+                <p style="margin:0;">&copy; 2026 Demeter. All rights reserved.</p>
+                <p style="margin:0;font-size:0.8rem;">ICP License: ZJ-ICP-XXXXXXXX</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== Back to Top ==================== -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        /* ---- Formspree AJAX submission ---- */
+        (function () {
+            var form = document.getElementById('supportForm');
+            var btn = document.getElementById('submitBtn');
+            var feedback = document.getElementById('formFeedback');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (!form.checkValidity()) { form.reportValidity(); return; }
+
+                btn.disabled = true;
+                btn.innerHTML = '<i class="bi bi-hourglass-split" style="margin-right:6px;"></i> Sending...';
+                feedback.style.display = 'none';
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                })
+                .then(function (res) {
+                    if (res.ok) {
+                        feedback.style.display = 'block';
+                        feedback.style.color = '#1A8C4A';
+                        feedback.textContent = 'Thank you! Your inquiry has been sent. We will contact you shortly.';
+                        form.reset();
+                    } else {
+                        throw new Error('Server error');
+                    }
+                })
+                .catch(function () {
+                    feedback.style.display = 'block';
+                    feedback.style.color = '#dc3545';
+                    feedback.textContent = 'Submission failed. Please email us directly at infiniteindustry@outlook.com.';
+                })
+                .finally(function () {
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="bi bi-send-fill" style="margin-right:6px;"></i> Submit Inquiry';
+                });
+            });
+        })();
+
+        /* ---- Back to Top ---- */
+        (function () {
+            var btn = document.getElementById('backToTop');
+            window.addEventListener('scroll', function () {
+                btn.classList.toggle('show', window.scrollY > 400);
+            });
+            btn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+
+        /* ---- Auto-collapse mobile nav ---- */
+        (function () {
+            var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            var menuCollapse = document.getElementById('mainNav');
+            var bsCollapse = bootstrap.Collapse.getInstance(menuCollapse);
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    if (menuCollapse.classList.contains('show')) {
+                        if (!bsCollapse) bsCollapse = new bootstrap.Collapse(menuCollapse, { toggle: false });
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        })();
+
+        /* ---- Navbar scroll shadow ---- */
+        (function () {
+            var navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', function () {
+                navbar.style.boxShadow = window.scrollY > 10
+                    ? '0 4px 20px rgba(0,0,0,0.25)'
+                    : '0 2px 10px rgba(0,0,0,0.15)';
+            });
+        })();
+    </script>
+
+</body>
+</html>
