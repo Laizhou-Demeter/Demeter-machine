@@ -413,6 +413,26 @@
         }
         .back-to-top.show { opacity: 1; visibility: visible; }
         .back-to-top:hover { background: var(--accent-light); transform: translateY(-3px); }
+        /* ========== Language Switcher (Google Translate) ========== */
+        #google_translate_element select {
+            background: rgba(255,255,255,0.1) !important;
+            color: rgba(255,255,255,0.85) !important;
+            border: 1px solid rgba(255,255,255,0.25) !important;
+            border-radius: 4px !important;
+            padding: 4px 8px !important;
+            font-size: 0.8rem !important;
+            cursor: pointer;
+        }
+        #google_translate_element select:hover {
+            background: rgba(255,255,255,0.2) !important;
+            border-color: rgba(255,255,255,0.4) !important;
+        }
+        .goog-te-banner-frame { display: none !important; }
+        .goog-te-banner { display: none !important; }
+        body { top: 0 !important; }
+        .goog-te-gadget { font-size: 0 !important; }
+        .goog-te-gadget span { display: none !important; }
+        .goog-te-gadget select { font-size: 0.8rem !important; }
     </style>
 </head>
 <body>
@@ -421,7 +441,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="https://sc02.alicdn.com/kf/H3cf490643f124dc8be6fd181cb7cc029P.jpg" alt="Demeter Logo">
+                <img src="images/logo.jpg" alt="Demeter Logo">
                 <span class="brand-text">
                     <span class="en">LAIZHOU DEMETER IMPORTS AND EXPORTS CO., LTD</span>
                     <span class="tagline">SMC/BMC Production Line · Hydraulic Press · Mold</span>
@@ -441,6 +461,8 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <!-- Language Switcher -->
+            <div id="google_translate_element" class="ms-lg-3 mt-2 mt-lg-0"></div>
         </div>
     </nav>
 
@@ -786,6 +808,18 @@
                     : '0 2px 10px rgba(0,0,0,0.15)';
             });
         })();
+    </script>
+
+    <!-- Google Translate API -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,zh-CN,es,fr,de,ar,pt,ru,ja,ko,hi,tr,vi,th,id,it,nl,pl',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
     </script>
 
 </body>

@@ -300,6 +300,26 @@
         }
         .back-to-top.show { opacity: 1; visibility: visible; }
         .back-to-top:hover { background: var(--accent-light); transform: translateY(-3px); }
+        /* ========== Language Switcher (Google Translate) ========== */
+        #google_translate_element select {
+            background: rgba(255,255,255,0.1) !important;
+            color: rgba(255,255,255,0.85) !important;
+            border: 1px solid rgba(255,255,255,0.25) !important;
+            border-radius: 4px !important;
+            padding: 4px 8px !important;
+            font-size: 0.8rem !important;
+            cursor: pointer;
+        }
+        #google_translate_element select:hover {
+            background: rgba(255,255,255,0.2) !important;
+            border-color: rgba(255,255,255,0.4) !important;
+        }
+        .goog-te-banner-frame { display: none !important; }
+        .goog-te-banner { display: none !important; }
+        body { top: 0 !important; }
+        .goog-te-gadget { font-size: 0 !important; }
+        .goog-te-gadget span { display: none !important; }
+        .goog-te-gadget select { font-size: 0.8rem !important; }
     </style>
 </head>
 <body>
@@ -308,7 +328,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="https://sc02.alicdn.com/kf/H3cf490643f124dc8be6fd181cb7cc029P.jpg" alt="Demeter Logo">
+                <img src="images/logo.jpg" alt="Demeter Logo">
                 <span class="brand-text">
                     <span class="en">LAIZHOU DEMETER IMPORTS AND EXPORTS CO., LTD</span>
                     <span class="tagline">SMC/BMC Production Line · Hydraulic Press · Mold</span>
@@ -328,6 +348,8 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <!-- Language Switcher -->
+            <div id="google_translate_element" class="ms-lg-3 mt-2 mt-lg-0"></div>
         </div>
     </nav>
 
@@ -357,20 +379,20 @@
             <!-- Image Gallery -->
             <div class="row g-3 mb-5">
                 <div class="col-md-4 col-6">
-                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H1020b0e644ff4bd289abf738403392a6y.jpg" data-caption="SMC Sheet Molding Compound Production Line — Full System Overview">
-                        <img src="https://sc02.alicdn.com/kf/H1020b0e644ff4bd289abf738403392a6y.jpg" alt="SMC Production Line Full View">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/hero-smc-line.jpg" data-caption="SMC Sheet Molding Compound Production Line — Full System Overview">
+                        <img src="images/hero-smc-line.jpg" alt="SMC Production Line Full View">
                         <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-6">
-                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H82b0e48576d94ee28cd012b105c5f132A.jpg" data-caption="SMC Sheet Machine — Resin Paste &amp; Fiber Impregnation Section">
-                        <img src="https://sc02.alicdn.com/kf/H82b0e48576d94ee28cd012b105c5f132A.jpg" alt="SMC Sheet Machine Close-up">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/product-smc-line.jpg" data-caption="SMC Sheet Machine — Resin Paste &amp; Fiber Impregnation Section">
+                        <img src="images/product-smc-line.jpg" alt="SMC Sheet Machine Close-up">
                         <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-6">
-                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H07883ecc761549b69243727c6c5f54fah.jpg" data-caption="SMC Production Line &amp; Application Products — Full Range Overview">
-                        <img src="https://sc02.alicdn.com/kf/H07883ecc761549b69243727c6c5f54fah.jpg" alt="SMC Production Line and Products">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/products-smc-overview.jpg" data-caption="SMC Production Line &amp; Application Products — Full Range Overview">
+                        <img src="images/products-smc-overview.jpg" alt="SMC Production Line and Products">
                         <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
@@ -424,20 +446,20 @@
             <!-- Image Gallery -->
             <div class="row g-3 mb-5">
                 <div class="col-md-4 col-6">
-                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H57d906d8c92945aeb013c0eb8ad417b2G.jpg" data-caption="Four-Column Hydraulic Press — Y32 Series Overview">
-                        <img src="https://sc02.alicdn.com/kf/H57d906d8c92945aeb013c0eb8ad417b2G.jpg" alt="Hydraulic Press Overview">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/hero-hydraulic-press.jpg" data-caption="Four-Column Hydraulic Press — Y32 Series Overview">
+                        <img src="images/hero-hydraulic-press.jpg" alt="Hydraulic Press Overview">
                         <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-6">
-                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H5941392f65eb46a499978b48239b9f0bp.jpg" data-caption="Hydraulic Press with SMC Mold — Working Area Close-up">
-                        <img src="https://sc02.alicdn.com/kf/H5941392f65eb46a499978b48239b9f0bp.jpg" alt="Press Working Area">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/products-press-workarea.jpg" data-caption="Hydraulic Press with SMC Mold — Working Area Close-up">
+                        <img src="images/products-press-workarea.jpg" alt="Press Working Area">
                         <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-6">
-                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/Haa287213b7f641fc8225e9e63dd33a01I.jpg" data-caption="Y32 Series Technical Specification Sheet">
-                        <img src="https://sc02.alicdn.com/kf/Haa287213b7f641fc8225e9e63dd33a01I.jpg" alt="Y32 Spec Sheet">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/products-press-spec.jpg" data-caption="Y32 Series Technical Specification Sheet">
+                        <img src="images/products-press-spec.jpg" alt="Y32 Spec Sheet">
                         <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
@@ -495,20 +517,20 @@
             <!-- Image Gallery -->
             <div class="row g-3 mb-5">
                 <div class="col-md-4 col-6">
-                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/Hb564f0f60b8f42ae9ecb7ed0b897c6d9M.jpg" data-caption="SMC Compression Mold Die Set — Precision Machined Tool Steel">
-                        <img src="https://sc02.alicdn.com/kf/Hb564f0f60b8f42ae9ecb7ed0b897c6d9M.jpg" alt="Compression Mold Die Set">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/product-mold.jpg" data-caption="SMC Compression Mold Die Set — Precision Machined Tool Steel">
+                        <img src="images/product-mold.jpg" alt="Compression Mold Die Set">
                         <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-6">
-                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H578d0ae0385b4dd9b84080576347c48fE.jpg" data-caption="SMC Molded GRP Sectional Water Tank — Finished Product Example (SMC Mold Application)">
-                        <img src="https://sc02.alicdn.com/kf/H578d0ae0385b4dd9b84080576347c48fE.jpg" alt="SMC GRP Water Tank">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/products-water-tank.jpg" data-caption="SMC Molded GRP Sectional Water Tank — Finished Product Example (SMC Mold Application)">
+                        <img src="images/products-water-tank.jpg" alt="SMC GRP Water Tank">
                         <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-6">
-                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://sc02.alicdn.com/kf/H3303644d2dce407eacb82153644d7a2aF.jpg" data-caption="SMC Molded Septic Tank — Finished SMC Product Example">
-                        <img src="https://sc02.alicdn.com/kf/H3303644d2dce407eacb82153644d7a2aF.jpg" alt="SMC Molded Septic Tank Product">
+                    <div class="gallery-thumb" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/products-septic-tank.jpg" data-caption="SMC Molded Septic Tank — Finished SMC Product Example">
+                        <img src="images/products-septic-tank.jpg" alt="SMC Molded Septic Tank Product">
                         <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                     </div>
                 </div>
@@ -684,6 +706,18 @@
                     : '0 2px 10px rgba(0,0,0,0.15)';
             });
         })();
+    </script>
+
+    <!-- Google Translate API -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,zh-CN,es,fr,de,ar,pt,ru,ja,ko,hi,tr,vi,th,id,it,nl,pl',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
     </script>
 
 </body>

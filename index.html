@@ -182,9 +182,9 @@
             position: relative;
         }
         /* Hero slide background images */
-        .slide-1 { background: url('https://sc02.alicdn.com/kf/H1020b0e644ff4bd289abf738403392a6y.jpg') center/cover no-repeat; }
-        .slide-2 { background: url('https://sc02.alicdn.com/kf/H57d906d8c92945aeb013c0eb8ad417b2G.jpg') center/cover no-repeat; }
-        .slide-3 { background: url('https://sc02.alicdn.com/kf/Hd107d3d9fe7d476bb87076272f8e0dcfj.jpg') center/cover no-repeat; }
+        .slide-1 { background: url('images/hero-smc-line.jpg') center/cover no-repeat; }
+        .slide-2 { background: url('images/hero-hydraulic-press.jpg') center/cover no-repeat; }
+        .slide-3 { background: url('images/hero-mold.jpg') center/cover no-repeat; }
 
         .hero-slide::before {
             content: '';
@@ -550,6 +550,28 @@
             background: var(--accent-light);
             transform: translateY(-3px);
         }
+        /* ========== Language Switcher (Google Translate) ========== */
+        #google_translate_element select {
+            background: rgba(255,255,255,0.1) !important;
+            color: rgba(255,255,255,0.85) !important;
+            border: 1px solid rgba(255,255,255,0.25) !important;
+            border-radius: 4px !important;
+            padding: 4px 8px !important;
+            font-size: 0.8rem !important;
+            cursor: pointer;
+        }
+        #google_translate_element select:hover {
+            background: rgba(255,255,255,0.2) !important;
+            border-color: rgba(255,255,255,0.4) !important;
+        }
+        /* Hide Google Translate top banner */
+        .goog-te-banner-frame { display: none !important; }
+        .goog-te-banner { display: none !important; }
+        body { top: 0 !important; }
+        /* Hide Google Translate attribution on mobile */
+        .goog-te-gadget { font-size: 0 !important; }
+        .goog-te-gadget span { display: none !important; }
+        .goog-te-gadget select { font-size: 0.8rem !important; }
     </style>
 </head>
 <body>
@@ -558,8 +580,8 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="https://sc02.alicdn.com/kf/H3cf490643f124dc8be6fd181cb7cc029P.jpg" alt="Demeter Logo">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" alt="Demeter Logo">
                 <span class="brand-text">
                     <span class="en">LAIZHOU DEMETER IMPORTS AND EXPORTS CO., LTD</span>
                     <span class="tagline">SMC/BMC Production Line · Hydraulic Press · Mold</span>
@@ -583,6 +605,8 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <!-- Language Switcher -->
+            <div id="google_translate_element" class="ms-lg-3 mt-2 mt-lg-0"></div>
         </div>
     </nav>
 
@@ -602,7 +626,7 @@
                     <div class="hero-content">
                         <h1>SMC / BMC Sheet Molding Compound Line</h1>
                         <p>Fully automated high-precision sheet production — from resin paste mixing to winding and packaging, one-stop solution for high-volume composite manufacturing</p>
-                        <a href="#" class="btn btn-lg">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="products.html" class="btn btn-lg">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -613,7 +637,7 @@
                     <div class="hero-content">
                         <h1>Four-Column Hydraulic Press</h1>
                         <p>10T – 2000T full range · Rigid welded frame · Precision servo-hydraulic control · Compatible with SMC/BMC/GMT molding processes</p>
-                        <a href="#" class="btn btn-lg">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="products.html" class="btn btn-lg">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -624,7 +648,7 @@
                     <div class="hero-content">
                         <h1>High-Precision Compression Molds</h1>
                         <p>Purpose-built SMC/BMC/GMT molds · CNC precision machining · Long-life design · Serving automotive, electrical, and construction industries</p>
-                        <a href="#" class="btn btn-lg">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="products.html" class="btn btn-lg">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -653,7 +677,7 @@
                 <!-- Product 1: SMC/BMC Production Line -->
                 <div class="col-lg-4 col-md-6">
                     <div class="product-card">
-                        <div class="product-img" style="background: url('https://sc02.alicdn.com/kf/H82b0e48576d94ee28cd012b105c5f132A.jpg') center/cover no-repeat;">
+                        <div class="product-img" style="background: url('images/product-smc-line.jpg') center/cover no-repeat;">
                             <div class="overlay-icon">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
@@ -661,7 +685,7 @@
                         <div class="product-body">
                             <h3>SMC / BMC Sheet Production Line</h3>
                             <p>Fully automated SMC/BMC sheet molding compound machines covering resin paste preparation, chopped fiber dispersion, impregnation, compaction, and take-up — delivering high-precision, high-uniformity continuous sheet production.</p>
-                            <a href="#" class="btn btn-link">View Details &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="products.html" class="btn btn-link">View Details &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -669,7 +693,7 @@
                 <!-- Product 2: Four-Column Hydraulic Press -->
                 <div class="col-lg-4 col-md-6">
                     <div class="product-card">
-                        <div class="product-img" style="background: url('https://sc02.alicdn.com/kf/H6993c3af1a9c4c72b456edd53016716cw.jpg') center/cover no-repeat;">
+                        <div class="product-img" style="background: url('images/product-hydraulic-press.jpg') center/cover no-repeat;">
                             <div class="overlay-icon">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
@@ -677,7 +701,7 @@
                         <div class="product-body">
                             <h3>Four-Column Hydraulic Press</h3>
                             <p>10T–2000T full-series four-column hydraulic presses featuring rigid welded frames and precision servo-hydraulic systems. Supports SMC, BMC, GMT and other compression molding processes for automotive parts, electrical insulation, and construction products.</p>
-                            <a href="#" class="btn btn-link">View Details &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="products.html" class="btn btn-link">View Details &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -685,7 +709,7 @@
                 <!-- Product 3: Compression Molds -->
                 <div class="col-lg-4 col-md-6">
                     <div class="product-card">
-                        <div class="product-img" style="background: url('https://sc02.alicdn.com/kf/Hb564f0f60b8f42ae9ecb7ed0b897c6d9M.jpg') center/cover no-repeat;">
+                        <div class="product-img" style="background: url('images/product-mold.jpg') center/cover no-repeat;">
                             <div class="overlay-icon">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
@@ -693,7 +717,7 @@
                         <div class="product-body">
                             <h3>High-Precision Compression Molds</h3>
                             <p>Custom-designed SMC/BMC/GMT hot-press molds crafted from premium tool steel on advanced CNC machining centers. Ideal for automotive exterior and structural parts, electrical switch housings, and high-precision molded products.</p>
-                            <a href="#" class="btn btn-link">View Details &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="products.html" class="btn btn-link">View Details &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -707,7 +731,7 @@
             <div class="row align-items-center g-5">
                 <!-- Left: factory aerial photo -->
                 <div class="col-lg-6">
-                    <div class="about-img" style="background: url('https://sc02.alicdn.com/kf/Hbdd1a5e632f54d5ebaaffe3de7183725H.jpg') center/cover no-repeat;"></div>
+                    <div class="about-img" style="background: url('images/about-factory.jpg') center/cover no-repeat;"></div>
                 </div>
 
                 <!-- Right: company introduction -->
@@ -744,7 +768,7 @@
                             </div>
                         </div>
 
-                        <a href="#" class="btn btn-primary" style="background:var(--accent);border-color:var(--accent);">
+                        <a class="btn btn-primary" style="background:var(--accent);border-color:var(--accent);" href="about.html">
                             Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -765,12 +789,12 @@
                 <!-- Exhibition 1: 2025 USA Composites Expo -->
                 <div class="col-lg-6 col-md-6">
                     <div class="news-card">
-                        <div class="news-img" style="background: url('https://sc02.alicdn.com/kf/Hba849a8d8c7a4bd39920f1f161d2832bi.jpg') center/cover no-repeat;"></div>
+                        <div class="news-img" style="background: url('images/news-camx-2025.jpg') center/cover no-repeat;"></div>
                         <div class="news-body">
                             <div class="date"><i class="fa-regular fa-calendar"></i>&nbsp; 2025</div>
                             <h4>CAMX 2025 — The Composites and Advanced Materials Expo</h4>
                             <p>Demeter exhibited at CAMX 2025 in the United States, showcasing our latest SMC/BMC sheet production line technology, hydraulic presses, and compression molds to the North American market.</p>
-                            <a href="#" class="btn btn-link">Read More &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="news.html" class="btn btn-link">Read More &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -778,12 +802,12 @@
                 <!-- Exhibition 2: 2024 GEC Expo -->
                 <div class="col-lg-6 col-md-6">
                     <div class="news-card">
-                        <div class="news-img" style="background: url('https://sc02.alicdn.com/kf/Hdf40a74d6f0042c19e021c7a45e4ec37R.jpg') center/cover no-repeat;"></div>
+                        <div class="news-img" style="background: url('images/news-gec-2024.jpg') center/cover no-repeat;"></div>
                         <div class="news-body">
                             <div class="date"><i class="fa-regular fa-calendar"></i>&nbsp; 2024</div>
                             <h4>GEC 2024 — Global Equipment &amp; Composites Exhibition</h4>
                             <p>Demeter participated in GEC 2024, presenting our full range of compression molding equipment and connecting with international partners across the composites supply chain.</p>
-                            <a href="#" class="btn btn-link">Read More &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="news.html" class="btn btn-link">Read More &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -813,10 +837,10 @@
                     <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
                         <h5>Quick Links</h5>
                         <ul>
-                            <li><a href="#">&gt; About Us</a></li>
-                            <li><a href="#">&gt; Products</a></li>
-                            <li><a href="#">&gt; Services</a></li>
-                            <li><a href="#">&gt; Certificates</a></li>
+                            <li><a href="about.html">&gt; About Us</a></li>
+                            <li><a href="products.html">&gt; Products</a></li>
+                            <li><a href="service.html">&gt; Services</a></li>
+                            <li><a href="certificates.html">&gt; Certificates</a></li>
                             <li><a href="news.html">&gt; News</a></li>
                         </ul>
                     </div>
@@ -825,11 +849,11 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                         <h5>Products</h5>
                         <ul>
-                            <li><a href="#">&gt; SMC / BMC Sheet Lines</a></li>
-                            <li><a href="#">&gt; Four-Column Hydraulic Presses</a></li>
-                            <li><a href="#">&gt; Compression Molds</a></li>
-                            <li><a href="#">&gt; Auxiliary Equipment</a></li>
-                            <li><a href="#">&gt; Custom Solutions</a></li>
+                            <li><a href="products.html">&gt; SMC / BMC Sheet Lines</a></li>
+                            <li><a href="products.html">&gt; Four-Column Hydraulic Presses</a></li>
+                            <li><a href="products.html">&gt; Compression Molds</a></li>
+                            <li><a href="products.html">&gt; Auxiliary Equipment</a></li>
+                            <li><a href="products.html">&gt; Custom Solutions</a></li>
                         </ul>
                     </div>
 
@@ -919,6 +943,18 @@
                 }
             });
         })();
+    </script>
+
+    <!-- Google Translate API -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,zh-CN,es,fr,de,ar,pt,ru,ja,ko,hi,tr,vi,th,id,it,nl,pl',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
     </script>
 
 </body>
