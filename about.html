@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Demeter | Industrial Compression Molding Equipment Manufacturer</title>
+    <meta name="description" content="Learn about Demeter — a leading manufacturer of SMC/BMC sheet molding compound production lines, four-column hydraulic presses, and compression molds with over 15 years of industry experience.">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* ========== CSS Variables: Industrial Blue-Gray Palette ========== */
+        :root {
+            --primary-dark: #0B2B4A;
+            --primary: #1B4F7A;
+            --primary-light: #2E7DBF;
+            --accent: #1A8C4A;
+            --accent-light: #28B463;
+            --gray-dark: #2C3E50;
+            --gray: #5D6D7E;
+            --gray-light: #AAB7C4;
+            --bg-light: #F4F7FA;
+            --white: #FFFFFF;
+            --text-dark: #1C2833;
+            --shadow: 0 2px 20px rgba(0,0,0,0.08);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* ========== Global Styles ========== */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            padding-top: 76px;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+        a { text-decoration: none; transition: var(--transition); }
+
+        .section-padding { padding: 80px 0; }
+        @media (max-width: 768px) { .section-padding { padding: 50px 0; } }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            position: relative;
+            display: inline-block;
+        }
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+        .section-title p {
+            color: var(--gray);
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        /* ========== Navbar (same as index) ========== */
+        .navbar {
+            background: var(--primary-dark);
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            z-index: 1030;
+        }
+        .navbar .container { padding: 0 15px; }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+        }
+        .navbar-brand img { height: 42px; width: auto; }
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        .brand-text .en {
+            color: var(--white);
+            font-size: 0.72rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .brand-text .tagline {
+            color: var(--accent-light);
+            font-size: 0.65rem;
+            white-space: nowrap;
+        }
+        .navbar-nav .nav-link {
+            color: rgba(255,255,255,0.85) !important;
+            font-size: 0.9rem;
+            padding: 28px 16px !important;
+            position: relative;
+            white-space: nowrap;
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--accent-light) !important;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after { width: 100%; }
+
+        .navbar-toggler {
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 6px 10px;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        @media (max-width: 991.98px) {
+            .navbar-nav .nav-link { padding: 12px 20px !important; }
+            .navbar-nav .nav-link::after { display: none; }
+            .navbar-collapse { background: var(--primary-dark); padding-bottom: 15px; }
+        }
+
+        /* ========== Page Banner ========== */
+        .page-banner {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+        }
+        .page-banner h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        .page-banner .breadcrumb {
+            justify-content: center;
+            margin: 0;
+            background: transparent;
+        }
+        .page-banner .breadcrumb a {
+            color: var(--accent-light);
+        }
+        .page-banner .breadcrumb .active {
+            color: rgba(255,255,255,0.6);
+        }
+        @media (max-width: 768px) {
+            .page-banner { padding: 40px 0; }
+            .page-banner h1 { font-size: 1.8rem; }
+        }
+
+        /* ========== Company Intro Section ========== */
+        .intro-img {
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+        .intro-img img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .intro-img:hover img { transform: scale(1.03); }
+        .intro-img .zoom-hint {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .intro-img:hover .zoom-hint { opacity: 1; }
+        @media (max-width: 768px) {
+            .intro-img img { height: 280px; }
+        }
+
+        .intro-text h2 {
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+        }
+        .intro-text p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+        .intro-text .philosophy-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            align-items: flex-start;
+        }
+        .philosophy-item i {
+            color: var(--accent);
+            font-size: 1.1rem;
+            margin-top: 4px;
+        }
+        .philosophy-item span {
+            color: var(--gray-dark);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* ========== Stats Bar ========== */
+        .stats-bar {
+            background: var(--primary-dark);
+            padding: 40px 0;
+        }
+        .stat-box {
+            text-align: center;
+            color: var(--white);
+            padding: 15px;
+        }
+        .stat-box .num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--accent-light);
+        }
+        .stat-box .label {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.7);
+            margin-top: 5px;
+        }
+        @media (max-width: 768px) {
+            .stat-box .num { font-size: 1.7rem; }
+        }
+
+        /* ========== Hot Markets Section ========== */
+        #markets { background: var(--bg-light); }
+
+        .market-map svg {
+            width: 100%;
+            height: auto;
+        }
+        .market-list h4 {
+            color: var(--primary-dark);
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+        .market-list h4:first-child { margin-top: 0; }
+        .market-list h4 i {
+            color: var(--accent);
+            margin-right: 8px;
+        }
+        .market-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .market-list ul li {
+            padding: 6px 0;
+            font-size: 0.9rem;
+            color: var(--gray);
+            border-bottom: 1px dashed var(--gray-light);
+        }
+        .market-list ul li:last-child { border-bottom: none; }
+        .market-list ul li strong {
+            color: var(--primary-dark);
+        }
+        .market-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin-left: 6px;
+            background: var(--accent);
+            color: var(--white);
+            vertical-align: middle;
+        }
+        .market-note {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--gray-light);
+            margin-top: 2px;
+        }
+
+        /* ========== Footer (same as index) ========== */
+        footer {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+        .footer-top {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-top h5 {
+            color: var(--white);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .footer-top h5::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--accent);
+        }
+        .footer-top ul { list-style: none; padding: 0; margin: 0; }
+        .footer-top ul li { margin-bottom: 10px; }
+        .footer-top ul li a {
+            color: rgba(255,255,255,0.6);
+            transition: var(--transition);
+        }
+        .footer-top ul li a:hover { color: var(--accent-light); padding-left: 5px; }
+        .footer-contact p { margin-bottom: 8px; }
+        .footer-contact i { width: 20px; color: var(--accent-light); margin-right: 8px; }
+        .footer-bottom {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            color: rgba(255,255,255,0.6);
+            margin-left: 10px;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+        .social-icons a:hover {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--white);
+        }
+
+        /* ========== Back to Top ========== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 44px;
+            height: 44px;
+            background: var(--accent);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            box-shadow: 0 4px 15px rgba(26,140,74,0.4);
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: var(--accent-light); transform: translateY(-3px); }
+
+        /* ========== Modal Lightbox ========== */
+        .modal-lightbox .modal-dialog { max-width: 90vw; }
+        .modal-lightbox .modal-content { background: transparent; border: none; }
+        .modal-lightbox .modal-body { padding: 0; text-align: center; }
+        .modal-lightbox .modal-body img { max-width: 100%; max-height: 85vh; border-radius: 4px; }
+        .modal-lightbox .btn-close-white { filter: invert(1); opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== Navbar ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" alt="Demeter Logo">
+                <span class="brand-text">
+                    <span class="en">LAIZHOU DEMETER IMPORTS AND EXPORTS CO., LTD</span>
+                    <span class="tagline">SMC/BMC Production Line · Hydraulic Press · Mold</span>
+                </span>
+            </a>
+
+            <!-- Mobile hamburger menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav links -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== Page Banner ==================== -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>About Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ==================== Section 1: Company Introduction ==================== -->
+    <section id="intro" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- 左侧：工厂图片（点击可放大） -->
+                <div class="col-lg-6">
+                    <div class="intro-img" data-bs-toggle="modal" data-bs-target="#imageModal" title="Click to enlarge">
+                        <img src="images/about-factory.jpg" alt="Demeter Factory Aerial View">
+                        <div class="zoom-hint">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右侧：企业介绍 -->
+                <div class="col-lg-6">
+                    <div class="intro-text">
+                        <h2>Who We Are</h2>
+                        <p>
+                            <strong>Laizhou Demeter Imports And Exports CO., LTD</strong> is a specialized manufacturer
+                            integrating R&amp;D, production, and sales of industrial compression molding equipment.
+                            With deep technical expertise in the composite materials machinery sector, we focus on
+                            three core product lines: <strong>SMC/BMC sheet molding compound production lines</strong>,
+                            <strong>four-column hydraulic presses</strong>, and <strong>high-precision compression molds</strong>.
+                        </p>
+                        <p>
+                            From material preparation to finished part molding, Demeter delivers complete turnkey
+                            solutions tailored to each client's production requirements. Our engineering team brings
+                            years of hands-on experience in automation, hydraulic servo control, and mold design,
+                            ensuring every machine meets rigorous performance and reliability standards.
+                        </p>
+
+                        <!-- 经营理念 -->
+                        <div class="philosophy-item">
+                            <i class="fa-solid fa-medal"></i>
+                            <span><strong>Quality First</strong> — Every machine undergoes strict factory acceptance testing before shipment, backed by ISO-certified quality management.</span>
+                        </div>
+                        <div class="philosophy-item">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span><strong>Innovation Driven</strong> — Continuous R&amp;D investment in servo-hydraulic technology, intelligent control systems, and energy-efficient designs.</span>
+                        </div>
+                        <div class="philosophy-item">
+                            <i class="fa-solid fa-handshake"></i>
+                            <span><strong>Customer Centric</strong> — From initial consultation to after-sales support, we partner with clients to maximize production uptime and product quality.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Stats Bar ==================== -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="stat-box">
+                        <div class="num">15+</div>
+                        <div class="label">Years of Experience</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-box">
+                        <div class="num">30+</div>
+                        <div class="label">Countries Served</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-box">
+                        <div class="num">500+</div>
+                        <div class="label">Clients Worldwide</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-box">
+                        <div class="num">10,000+ m²</div>
+                        <div class="label">Production Facility</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Section 2: Hot Markets ==================== -->
+    <section id="markets" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Global Market Presence</h2>
+                <p>Demeter equipment is trusted by manufacturers across Asia, Europe, the Middle East, and the Americas</p>
+            </div>
+
+            <div class="row align-items-center g-5">
+                <!-- 左侧：世界地图 SVG -->
+                <div class="col-lg-6">
+                    <div class="market-map">
+                        <svg viewBox="0 0 600 360" role="img" aria-label="Global market map with marked regions">
+                            <title>Demeter Global Market Map</title>
+                            <desc>Simplified world map showing key markets in China, India, Southeast Asia, Middle East, Europe, and South America</desc>
+
+                            <!-- Ocean background -->
+                            <rect width="600" height="360" fill="#E8EDF2" rx="8"/>
+
+                            <!-- Simplified continent outlines -->
+                            <!-- North America -->
+                            <g fill="#D0D7DE" stroke="#AAB7C4" stroke-width="0.5">
+                                <path d="M30,40 L30,140 L100,160 L180,140 L200,90 L180,50 L120,30 Z"/>
+                                <path d="M30,140 L30,220 L80,240 L100,200 Z"/>
+                            </g>
+
+                            <!-- South America -->
+                            <g fill="#D0D7DE" stroke="#AAB7C4" stroke-width="0.5">
+                                <path d="M120,200 L180,200 L200,250 L180,310 L140,330 L110,300 L105,250 Z"/>
+                            </g>
+
+                            <!-- Europe -->
+                            <g fill="#D0D7DE" stroke="#AAB7C4" stroke-width="0.5">
+                                <path d="M280,50 L320,40 L370,55 L400,70 L390,110 L360,130 L320,140 L290,120 L270,90 Z"/>
+                            </g>
+
+                            <!-- Africa -->
+                            <g fill="#D0D7DE" stroke="#AAB7C4" stroke-width="0.5">
+                                <path d="M280,140 L340,135 L380,180 L400,230 L380,300 L340,320 L300,300 L270,260 L260,200 Z"/>
+                            </g>
+
+                            <!-- Asia (massive) -->
+                            <g fill="#D0D7DE" stroke="#AAB7C4" stroke-width="0.5">
+                                <path d="M400,50 L460,40 L520,45 L580,60 L570,90 L540,100 L530,140 L510,170 L490,180 L460,200 L430,210 L400,200 L390,160 L380,130 L370,110 L360,90 L340,80 L310,80 L290,95 Z"/>
+                            </g>
+
+                            <!-- Southeast Asia / islands -->
+                            <g fill="#D0D7DE" stroke="#AAB7C4" stroke-width="0.5">
+                                <ellipse cx="530" cy="130" rx="18" ry="8"/>
+                                <ellipse cx="555" cy="145" rx="12" ry="6"/>
+                                <ellipse cx="560" cy="135" rx="10" ry="5"/>
+                            </g>
+
+                            <!-- Australia -->
+                            <g fill="#D0D7DE" stroke="#AAB7C4" stroke-width="0.5">
+                                <ellipse cx="510" cy="260" rx="35" ry="25"/>
+                            </g>
+
+                            <!-- Market dots with pulsing effect -->
+                            <!-- India -->
+                            <circle cx="430" cy="150" r="7" fill="#2E7DBF" opacity="0.9">
+                                <animate attributeName="r" values="7;12;7" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+                            </circle>
+
+                            <!-- Southeast Asia (Thailand/Vietnam) -->
+                            <circle cx="535" cy="135" r="6" fill="#2E7DBF" opacity="0.9">
+                                <animate attributeName="r" values="6;10;6" dur="2s" begin="0.7s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" begin="0.7s" repeatCount="indefinite"/>
+                            </circle>
+
+                            <!-- Middle East -->
+                            <circle cx="370" cy="130" r="7" fill="#C56443" opacity="0.9">
+                                <animate attributeName="r" values="7;12;7" dur="2s" begin="1s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" begin="1s" repeatCount="indefinite"/>
+                            </circle>
+
+                            <!-- Europe -->
+                            <circle cx="335" cy="80" r="7" fill="#C56443" opacity="0.9">
+                                <animate attributeName="r" values="7;12;7" dur="2s" begin="0.2s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" begin="0.2s" repeatCount="indefinite"/>
+                            </circle>
+
+                            <!-- South America -->
+                            <circle cx="155" cy="270" r="6" fill="#836687" opacity="0.9">
+                                <animate attributeName="r" values="6;10;6" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+                            </circle>
+
+                            <!-- Legend -->
+                            <rect x="420" y="290" width="170" height="50" rx="6" fill="white" opacity="0.9" stroke="#D0D7DE" stroke-width="0.5"/>
+                            <circle cx="435" cy="307" r="5" fill="#2E7DBF"/>
+                            <text x="448" y="311" font-size="10" fill="#1C2833">Asia-Pacific Markets</text>
+                            <circle cx="435" cy="327" r="5" fill="#C56443"/>
+                            <text x="448" y="331" font-size="10" fill="#1C2833">Middle East &amp; Europe</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 右侧：市场列表 -->
+                <div class="col-lg-6">
+                    <div class="market-list">
+                        <!-- International Markets -->
+                        <h4><i class="fa-solid fa-globe"></i> International Markets</h4>
+                        <ul>
+                            <li>
+                                <strong>India</strong> <span class="market-tag">Top 1</span>
+                                <span class="market-note">Largest SMC/BMC consumer — automotive, electrical, infrastructure</span>
+                            </li>
+                            <li>
+                                <strong>Germany</strong> <span class="market-tag">Top 3</span>
+                                <span class="market-note">European automotive manufacturing powerhouse, high demand for precision molds</span>
+                            </li>
+                            <li>
+                                <strong>Saudi Arabia &amp; UAE</strong> <span class="market-tag">Growing</span>
+                                <span class="market-note">Construction boom driving demand for SMC water tanks &amp; panels</span>
+                            </li>
+                            <li>
+                                <strong>Thailand &amp; Vietnam</strong> <span class="market-tag">Rising</span>
+                                <span class="market-note">Fast-growing automotive parts manufacturing bases</span>
+                            </li>
+                            <li>
+                                <strong>Brazil</strong> <span class="market-tag">Rising</span>
+                                <span class="market-note">Largest South American market for composite molding equipment</span>
+                            </li>
+                            <li>
+                                <strong>Turkey</strong> <span class="market-tag">Hub</span>
+                                <span class="market-note">Strategic gateway between Europe, Middle East, and Asia</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Footer ==================== -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Company overview -->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <h5>Demeter</h5>
+                        <p style="font-size:0.85rem;margin-bottom:15px;">
+                            Specializing in SMC/BMC sheet molding compound production lines, four-column hydraulic presses, and high-precision molds — delivering reliable compression molding solutions worldwide.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#" title="WeChat"><i class="fa-brands fa-weixin"></i></a>
+                            <a href="#" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#" title="Phone"><i class="fa-solid fa-phone"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick links -->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="about.html">&gt; About Us</a></li>
+                            <li><a href="products.html">&gt; Products</a></li>
+                            <li><a href="services.html">&gt; Services</a></li>
+                            <li><a href="certificates.html">&gt; Certificates</a></li>
+                            <li><a href="news.html">&gt; News</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Product categories -->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5>Products</h5>
+                        <ul>
+                            <li><a href="products.html">&gt; SMC / BMC Sheet Lines</a></li>
+                            <li><a href="products.html">&gt; Four-Column Hydraulic Presses</a></li>
+                            <li><a href="products.html">&gt; Compression Molds</a></li>
+                            <li><a href="products.html">&gt; Auxiliary Equipment</a></li>
+                            <li><a href="products.html">&gt; Custom Solutions</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h5>Contact Us</h5>
+                        <div class="footer-contact">
+                            <p><i class="fa-solid fa-phone"></i> +86-13780678172</p>
+                            <p><i class="fa-solid fa-envelope"></i> infiniteindustry@outlook.com</p>
+                            <p><i class="fa-solid fa-fax"></i> +86-13780678172</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Laizhou, Shandong, China</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+                <p style="margin:0;">
+                    &copy; 2026 Demeter. All rights reserved.
+                </p>
+                <p style="margin:0;font-size:0.8rem;">
+                    ICP License: ZJ-ICP-XXXXXXXX
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== Image Modal (Lightbox) ==================== -->
+    <div class="modal fade modal-lightbox" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0" style="position:absolute;top:0;right:0;z-index:1;">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/about-factory.jpg" alt="Demeter Factory" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== Back to Top ==================== -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- ==================== Bootstrap 5 JS CDN ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ==================== Custom JavaScript ==================== -->
+    <script>
+        /* ---- Back to Top Button ---- */
+        (function () {
+            var btn = document.getElementById('backToTop');
+            window.addEventListener('scroll', function () {
+                btn.classList.toggle('show', window.scrollY > 400);
+            });
+            btn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+
+        /* ---- Auto-collapse mobile nav ---- */
+        (function () {
+            var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            var menuCollapse = document.getElementById('mainNav');
+            var bsCollapse = bootstrap.Collapse.getInstance(menuCollapse);
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    if (menuCollapse.classList.contains('show')) {
+                        if (!bsCollapse) bsCollapse = new bootstrap.Collapse(menuCollapse, { toggle: false });
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        })();
+
+        /* ---- Navbar scroll shadow ---- */
+        (function () {
+            var navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', function () {
+                navbar.style.boxShadow = window.scrollY > 10
+                    ? '0 4px 20px rgba(0,0,0,0.25)'
+                    : '0 2px 10px rgba(0,0,0,0.15)';
+            });
+        })();
+    </script>
+
+</body>
+</html>
